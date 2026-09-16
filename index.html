@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Wheather App</h2>
+
+    <form onsubmit="getWeather(event)">
+       <div>
+         <input type="text" id="userInput" required>
+        <button getWheather()>Check</button>
+       </div>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+        <p id="cloud"></p>
+        <p id="rain"></p>
+        <p id="snow"></p>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.17.0/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
