@@ -32,7 +32,7 @@ async function getWeather(event){
 let input = document.querySelector("#userInput");
 let inputValue = input.value;
 
-let result = await fetch(`http://api.weatherapi.com/v1/current.json?key=c473265e83ea41a6bd095013261509&q=${inputValue}&aqi=yes
+let result = await fetch(`https://api.weatherapi.com/v1/current.json?key=c473265e83ea41a6bd095013261509&q=${inputValue}&aqi=yes
 `)
 let convertData = await result.json();
 
